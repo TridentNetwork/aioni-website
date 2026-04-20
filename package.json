@@ -1,0 +1,20 @@
+{
+  "name": "aioni",
+  "version": "1.0.0",
+  "description": "Aioni Digital and Data Solutions Inc. website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "author": "Aioni Digital and Data Solutions Inc.",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.10.3"
+  }
+}
