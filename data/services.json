@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "title": "1 Gbps Enterprise Internet",
+      "description": "Dedicated 1 Gbps enterprise internet with committed throughput, low jitter, and direct peering to the major content networks.",
+      "icon": "network"
+    },
+    {
+      "title": "10 Gbps Service",
+      "description": "10 Gbps pipes engineered for high-throughput and data-intensive workloads — video, cloud, backup, and hyperscale interconnect.",
+      "icon": "server"
+    },
+    {
+      "title": "Co-location",
+      "description": "Rack space in partner data centers with redundant power and cooling. Remote hands available through our 24/7 NOC.",
+      "icon": "rack"
+    },
+    {
+      "title": "VPN L2 / MPLS / SD-WAN",
+      "description": "Private Layer 2 circuits, segment-routed MPLS cores, and policy-driven SD-WAN overlays. Built for multi-site enterprises.",
+      "icon": "vpn"
+    },
+    {
+      "title": "IP Transit",
+      "description": "Clean, optimized routes through multiple tier-1 upstreams and dozens of direct peerings. BGP-ready with full IPv4 and IPv6 support.",
+      "icon": "globe"
+    },
+    {
+      "title": "Managed Services",
+      "description": "Proactive monitoring, configuration management, and full lifecycle operations. Real engineers answer your tickets, day or night.",
+      "icon": "shield"
+    },
+    {
+      "title": "Network Infrastructure Design",
+      "description": "End-to-end network design, from branch and campus to the core — with security best practices baked in from day one.",
+      "icon": "design",
+      "wide": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "quotes": [
+    { "text": "Our latency to key CDNs dropped dramatically after moving to Aioni IP Transit.", "name": "Ramon D." },
+    { "text": "Seamless 10G upgrade. Their engineers handled design, cutover, and monitoring end-to-end.", "name": "Jessa M." },
+    { "text": "MPLS core with SD-WAN branches gave us uptime and control we never had before.", "name": "Miguel C." },
+    { "text": "Real people, 24/7. Tickets are answered by engineers who know our network.", "name": "Arlene M." },
+    { "text": "Colo footprint and L2 VPN simplified inter-site replication for our team.", "name": "Patrick G." },
+    { "text": "Zero-drama implementation. Clean routes and predictable performance.", "name": "Philip S." }
+  ]
+}

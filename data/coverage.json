@@ -1,0 +1,25 @@
+{
+  "cities": [
+    { "name": "Mandaluyong City", "region": "NCR", "note": "HQ", "lat": 14.5795, "lon": 121.0359, "label": "NCR", "hq": true },
+    { "name": "Makati City", "region": "NCR", "note": "VITRO 2", "lat": 14.5547, "lon": 121.0244, "skipPin": true },
+    { "name": "Cebu City", "region": "Central Visayas", "lat": 10.3157, "lon": 123.8854, "label": "CEBU" },
+    { "name": "Iloilo City", "region": "Western Visayas", "lat": 10.7200, "lon": 122.5620, "label": "ILOILO" },
+    { "name": "Davao City", "region": "Davao Region", "lat": 7.0731, "lon": 125.6128, "label": "DAVAO" },
+    { "name": "Tacloban City", "region": "Eastern Visayas", "lat": 11.2494, "lon": 125.0036, "label": "TACLOBAN" },
+    { "name": "Vigan", "region": "Ilocos Sur", "lat": 17.5746, "lon": 120.3870, "label": "VIGAN" },
+    { "name": "Cabusao", "region": "Camarines Sur", "lat": 13.7833, "lon": 123.1167, "label": "CABUSAO" },
+    { "name": "Naga City", "region": "Camarines Sur", "lat": 13.6218, "lon": 123.1948, "label": "NAGA" },
+    { "name": "Cagayan de Oro", "region": "Northern Mindanao", "lat": 8.4540, "lon": 124.6310, "label": "CDO" },
+    { "name": "Iligan City", "region": "Northern Mindanao", "lat": 8.2280, "lon": 124.2450 },
+    { "name": "Marawi City", "region": "Lanao del Sur", "lat": 8.0000, "lon": 124.2950 },
+    { "name": "Oroquieta City", "region": "Misamis Occidental", "lat": 8.4854, "lon": 123.8042, "label": "OROQUIETA" },
+    { "name": "Butuan City", "region": "Caraga", "lat": 8.9530, "lon": 125.5430, "label": "BUTUAN" },
+    { "name": "Bayugan City", "region": "Agusan del Sur", "lat": 8.7140, "lon": 125.7480 },
+    { "name": "Maramag", "region": "Bukidnon", "lat": 7.7640, "lon": 125.0010 },
+    { "name": "Rizal", "region": "Zamboanga del Norte", "lat": 8.6580, "lon": 123.4970 },
+    { "name": "Ipil", "region": "Zamboanga Sibugay", "lat": 7.7870, "lon": 122.5860, "label": "IPIL" }
+  ],
+  "visibleCount": 7,
+  "note": "Service availability outside listed regions available on request."
+  
+}

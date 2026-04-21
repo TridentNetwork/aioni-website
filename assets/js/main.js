@@ -1,3 +1,21 @@
+  // Inline SVG maps (so animations work)
+  function inlineSvg(id, url) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    fetch(url)
+      .then(function(r) { return r.text(); })
+      .then(function(svg) {
+        el.innerHTML = svg;
+        var svgEl = el.querySelector('svg');
+        if (svgEl) {
+          svgEl.style.width = '100%';
+          svgEl.style.height = '100%';
+        }
+      });
+  }
+  inlineSvg('mapDark', 'assets/images/ph-map.svg?v=11');
+  inlineSvg('mapLight', 'assets/images/ph-map-light.svg?v=11');
+
   // Back to top button
   var topBtn = document.getElementById('backToTop');
   if (topBtn) {
@@ -60,39 +78,46 @@
     });
   });
 
-  // Coverage show more / show less
-  const covBtn = document.getElementById('covToggle');
-  if (covBtn) {
-    covBtn.addEventListener('click', function() {
-      var items = document.querySelectorAll('.cov-hidden');
-      var expanded = covBtn.textContent === 'Show less';
-      covBtn.disabled = true;
+  // Reusable show more / show less toggle
+  function setupToggle(btnId, hiddenClass, showClass, outClass) {
+    var btn = document.getElementById(btnId);
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+      var items = document.querySelectorAll('.' + hiddenClass);
+      var expanded = btn.textContent === 'Show less';
+      btn.disabled = true;
       if (expanded) {
         var total = items.length;
         for (var i = total - 1; i >= 0; i--) {
-          (function(el, delay) {
+          (function(el, idx) {
             setTimeout(function() {
-              el.classList.remove('cov-show');
-              el.classList.add('cov-out');
-            }, (total - 1 - i) * 50);
+              el.classList.remove(showClass);
+              el.classList.add(outClass);
+            }, (total - 1 - idx) * 50);
           })(items[i], i);
         }
         setTimeout(function() {
-          items.forEach(function(el) { el.classList.remove('cov-out'); });
-          covBtn.textContent = 'Show more';
-          covBtn.disabled = false;
+          items.forEach(function(el) { el.classList.remove(outClass); });
+          btn.textContent = 'Show more';
+          btn.disabled = false;
         }, total * 50 + 250);
       } else {
         items.forEach(function(el, i) {
-          setTimeout(function() { el.classList.add('cov-show'); }, i * 50);
+          setTimeout(function() { el.classList.add(showClass); }, i * 50);
         });
         setTimeout(function() {
-          covBtn.textContent = 'Show less';
-          covBtn.disabled = false;
+          btn.textContent = 'Show less';
+          btn.disabled = false;
         }, items.length * 50 + 250);
       }
     });
   }
+
+  // IXP show more / show less
+  setupToggle('ixpToggle', 'ixp-hidden', 'ixp-show', 'ixp-out');
+
+  // Coverage show more / show less
+  setupToggle('covToggle', 'cov-hidden', 'cov-show', 'cov-out');
 
   // Mobile menu toggle — simple anchor scroll panel
   const toggle = document.querySelector('.mobile-toggle');

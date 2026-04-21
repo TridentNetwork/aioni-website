@@ -85,9 +85,9 @@
     background: #1a1f2e;
     color: #cbd5e1;
   }
-  .coverage-map img.map-light { display: none; }
-  [data-theme="light"] .coverage-map img.map-dark { display: none; }
-  [data-theme="light"] .coverage-map img.map-light { display: block; }
+  .coverage-map .map-light { display: none; }
+  [data-theme="light"] .coverage-map .map-dark { display: none; }
+  [data-theme="light"] .coverage-map .map-light { display: block; }
   .logo-light { display: none; }
   [data-theme="light"] .logo-dark { display: none; }
   [data-theme="light"] .logo-light { display: block; }
@@ -754,6 +754,9 @@
     align-items: center;
   }
   .ixp-row:last-child { border-bottom: none; }
+  .no-speed .ixp-table-head, .no-speed .ixp-row, .no-speed .ixp-row.ixp-hidden.ixp-show, .no-speed .ixp-row.ixp-hidden.ixp-out {
+    grid-template-columns: 2fr 1fr;
+  }
   .ixp-row:hover { background: var(--bg-card); }
   .ixp-name { font-family: var(--serif); font-size: 16px; }
   .ixp-speed {
@@ -1059,13 +1062,13 @@
     overflow: hidden;
     min-height: 560px;
   }
-  .coverage-map img.ph-map-svg {
+  .coverage-map .ph-map-svg {
     width: 100%;
     height: 100%;
-    object-fit: contain;
     display: block;
     user-select: none;
     pointer-events: none;
+    border: none;
   }
   .map-pin {
     position: absolute;
@@ -1161,7 +1164,7 @@
     margin-right: 12px;
     vertical-align: middle;
   }
-  .cov-list li.cov-hidden {
+  .cov-list li.cov-hidden, .ixp-row.ixp-hidden {
     display: none;
   }
   .cov-list li.cov-hidden.cov-show {
@@ -1171,6 +1174,25 @@
   .cov-list li.cov-hidden.cov-out {
     display: flex;
     animation: covOut 0.25s ease forwards;
+  }
+  .ixp-row.ixp-hidden.ixp-show {
+    display: grid;
+    border-bottom: 1px solid var(--line);
+    animation: ixpIn 0.25s ease forwards;
+  }
+  .ixp-row.ixp-hidden.ixp-show:hover { background: var(--bg-card); }
+  .ixp-row.ixp-hidden.ixp-out {
+    display: grid;
+    border-bottom: 1px solid var(--line);
+    animation: ixpOut 0.25s ease forwards;
+  }
+  @keyframes ixpIn {
+    from { opacity: 0; max-height: 0; padding: 0 18px; }
+    to { opacity: 1; max-height: 70px; padding: 18px; }
+  }
+  @keyframes ixpOut {
+    from { opacity: 1; max-height: 70px; padding: 18px; }
+    to { opacity: 0; max-height: 0; padding: 0 18px; }
   }
   @keyframes covIn {
     from { opacity: 0; max-height: 0; padding: 0; }

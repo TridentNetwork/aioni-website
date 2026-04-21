@@ -1,0 +1,7 @@
+{
+  "members": [
+    { "name": "Dans Santillan", "role": "CEO & Network Architect", "avatar": "https://api.dicebear.com/7.x/adventurer-neutral/svg?seed=Dans%20Santillan" },
+    { "name": "April Santillan", "role": "Marketing Manager", "avatar": "https://api.dicebear.com/7.x/adventurer-neutral/svg?seed=April%20Santillan&flip=true" },
+    { "name": "Clyde Harlan Deniega", "role": "Technical Support", "avatar": "https://api.dicebear.com/7.x/adventurer-neutral/svg?seed=Clyde%20Harlan%20Deniega" }
+  ]
+}

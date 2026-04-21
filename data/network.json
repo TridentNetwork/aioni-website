@@ -1,0 +1,38 @@
+{
+  "asn": "AS153174",
+  "org": "Aioni Digital and Data Solutions Inc.",
+  "sisterAsn": "AS137827",
+  "sisterOrg": "Cygnal Technologies",
+  "peeringPolicy": "Open",
+  "ipVersion": "IPv4 + IPv6 dual-stack",
+  "facilities": [
+    { "name": "eVitro Makati 2", "shortName": "VM2" },
+    { "name": "STT MK2", "shortName": "STT" }
+  ],
+  "showSpeed": false,
+  "ixpVisibleCount": 4,
+  "exchanges": [
+    { "name": "BBIX Manila", "speed": "20 Gbps", "status": "Operational" },
+    { "name": "GetaFIX Manila", "speed": "10 Gbps", "status": "Operational" },
+    { "name": "AMS-IX Manila", "speed": "1 Gbps", "status": "Operational" },
+    { "name": "AMS-IX Manila", "speed": "1 Gbps", "status": "Operational" },
+    { "name": "AMS-IX Manila", "speed": "1 Gbps", "status": "Operational" },
+    { "name": "AMS-IX Manila", "speed": "1 Gbps", "status": "Operational" },
+    { "name": "AMS-IX Manila", "speed": "1 Gbps", "status": "Operational" },
+    { "name": "Vitro Internet Exchange", "speed": "1 Gbps", "status": "Operational" }
+  ],
+  "contentPeers": [
+    { "name": "Meta", "topoLabel": "Meta" },
+    { "name": "Google", "topoLabel": "Google" },
+    { "name": "Cloudflare", "topoLabel": "Cloudflare" },
+    { "name": "Alibaba Cloud", "topoLabel": "Alibaba" },
+    { "name": "TikTok", "topoLabel": "TikTok" }
+  ],
+  "contentPeerLogos": {
+    "Meta": "assets/images/logos/meta.svg",
+    "Google": "assets/images/logos/google.svg",
+    "Cloudflare": "assets/images/logos/cloudflare.svg",
+    "Alibaba Cloud": "assets/images/logos/alibaba-cloud.svg",
+    "TikTok": "assets/images/logos/tiktok.svg"
+  }
+}

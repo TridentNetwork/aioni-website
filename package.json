@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --watch server.js",
+    "build:map": "node scripts/build-map.js",
+    "build": "node scripts/build-map.js && node scripts/build-prod.js",
+    "serve:prod": "NODE_ENV=production node dist/server.js"
   },
   "author": "Aioni Digital and Data Solutions Inc.",
   "license": "ISC",
@@ -14,7 +17,10 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
+    "clean-css": "^5.3.3",
     "connect-livereload": "^0.6.1",
-    "livereload": "^0.10.3"
+    "html-minifier-terser": "^7.2.0",
+    "livereload": "^0.10.3",
+    "terser": "^5.46.1"
   }
 }
