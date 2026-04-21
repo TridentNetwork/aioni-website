@@ -81,6 +81,13 @@
     filter: brightness(0.2) saturate(2);
     opacity: 1;
   }
+  [data-theme="light"] .partners-logos img[alt="Meta"] {
+    filter: grayscale(1) brightness(0.3);
+  }
+  [data-theme="light"] .partners-logos img[alt="Meta"]:hover {
+    filter: brightness(0.3) saturate(2);
+    opacity: 1;
+  }
   [data-theme="light"] footer {
     background: #1a1f2e;
     color: #cbd5e1;
