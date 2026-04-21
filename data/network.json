@@ -15,10 +15,6 @@
     { "name": "BBIX Manila", "speed": "20 Gbps", "status": "Operational" },
     { "name": "GetaFIX Manila", "speed": "10 Gbps", "status": "Operational" },
     { "name": "AMS-IX Manila", "speed": "1 Gbps", "status": "Operational" },
-    { "name": "AMS-IX Manila", "speed": "1 Gbps", "status": "Operational" },
-    { "name": "AMS-IX Manila", "speed": "1 Gbps", "status": "Operational" },
-    { "name": "AMS-IX Manila", "speed": "1 Gbps", "status": "Operational" },
-    { "name": "AMS-IX Manila", "speed": "1 Gbps", "status": "Operational" },
     { "name": "Vitro Internet Exchange", "speed": "1 Gbps", "status": "Operational" }
   ],
   "contentPeers": [
